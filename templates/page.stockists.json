@@ -11,13 +11,42 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "stockists_list_EUJrBN": {
+      "type": "stockists-list",
+      "blocks": {
+        "stockist_y3BKK3": {
+          "type": "stockist",
+          "settings": {
+            "name": "AGWA",
+            "country": "Australia",
+            "url": ""
+          }
+        },
+        "stockist_kF8eNT": {
+          "type": "stockist",
+          "settings": {
+            "name": "Agwa",
+            "country": "France",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "stockist_y3BKK3",
+        "stockist_kF8eNT"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "stockists_list_EUJrBN"
   ]
 }
