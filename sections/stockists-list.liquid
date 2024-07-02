@@ -1,0 +1,57 @@
+<div class="contacts-container">
+  {% for block in section.blocks %}
+    <article class="stockist">
+      {% if block.settings.name != '' %}
+        <h2 class="name">
+          {% if block.settings.url != '' %}
+            <a href="{{ block.settings.url }}" target="_blank">
+              {{ block.settings.name }}
+            </a>
+          {% else %}
+            {{ block.settings.name }}
+          {% endif %}
+        </h2>
+      {% endif %}
+
+      <p class="country">
+        {{ block.settings.country }}
+      </p>
+    </article>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Stockists list",
+  "tag": "div",
+  "class": "contacts-list container",
+  "presets": [
+    {
+      "name": "Stockists list"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Stockist",
+      "type": "stockist",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Stockist name"
+        },
+        {
+          "type": "text",
+          "id": "country",
+          "label": "Country"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Stockist website"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
