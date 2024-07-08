@@ -1,4 +1,6 @@
-<div class="contacts-container">
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="stockists-container">
   {% for block in section.blocks %}
     <article class="stockist">
       {% if block.settings.name != '' %}

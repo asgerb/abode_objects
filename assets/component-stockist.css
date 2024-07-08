@@ -1,0 +1,12 @@
+.stockist {
+  display: flex;
+  flex-direction: column;
+}
+
+.stockist .name {
+  order: 1;
+}
+
+.stockist .country {
+  order: 0;
+}
