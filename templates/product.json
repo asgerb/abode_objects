@@ -75,6 +75,11 @@
             "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
             "page": ""
           }
+        },
+        "product_information_xtRyB8": {
+          "type": "product_information",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -87,7 +92,8 @@
         "description",
         "share",
         "text_BCFyD4",
-        "collapsible-row-1"
+        "collapsible-row-1",
+        "product_information_xtRyB8"
       ],
       "settings": {
         "enable_sticky_info": true,
