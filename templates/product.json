@@ -60,22 +60,6 @@
             "share_label": "Share"
           }
         },
-        "text_BCFyD4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Dimensions {{ product.metafields.custom.dimensions.value }}<br\/>Designed by {{ product.metafields.custom.designer.value }}<br\/>Made in {{ product.metafields.custom.production_location.value }}<br\/><\/p>",
-            "text_style": "small"
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care and maintenance",
-            "icon": "none",
-            "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
-            "page": ""
-          }
-        },
         "product_information_xtRyB8": {
           "type": "product_information",
           "settings": {
@@ -91,8 +75,6 @@
         "buy_buttons",
         "description",
         "share",
-        "text_BCFyD4",
-        "collapsible-row-1",
         "product_information_xtRyB8"
       ],
       "settings": {
