@@ -64,7 +64,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Dimensions {{ product.metafields.custom.dimensions.value }}<br\/>Designed by {{ product.metafields.custom.designer.value }}<br\/>Made in {{ product.metafields.custom.production_location.value }}<br\/><\/p>",
-            "text_style": "body"
+            "text_style": "small"
           }
         },
         "collapsible-row-1": {
