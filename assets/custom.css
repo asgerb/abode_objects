@@ -359,6 +359,7 @@ body main {
 
 .article-card__info {
   text-transform: none;
+  letter-spacing: normal !important;
 }
 
 .article-card__excerpt {
@@ -366,7 +367,7 @@ body main {
 }
 
 .article-template {
-  padding-top: var(--page-padding-top);
+  padding-top: var(--page-padding-top) !important;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
