@@ -57,7 +57,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Returns",
-            "icon": "truck",
+            "icon": "none",
             "content": "",
             "page": ""
           }
