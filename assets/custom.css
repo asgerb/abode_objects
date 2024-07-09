@@ -460,3 +460,8 @@ body main {
     padding-right: 5rem;
   }
 }
+
+.product__text--small {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
