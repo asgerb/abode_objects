@@ -1,5 +1,7 @@
 :root {
   --page-padding-top: 36px;
+  --font-size-sm: 1.4rem;
+  --line-height-sm: 1.8rem;
   --font-size-base: 1.6rem;
   --line-height-base: 2.2rem;
 }
@@ -43,8 +45,8 @@
 
 .footer {
   border-top: 0 !important;
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
 }
 
 .footer__content-bottom {
