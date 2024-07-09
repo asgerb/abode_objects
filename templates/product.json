@@ -20,7 +20,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "<p>{{ product.metafields.descriptors.subtitle.value }}<\/p>",
             "text_style": "subtitle"
           }
         },
@@ -63,21 +63,14 @@
         "text_BCFyD4": {
           "type": "text",
           "settings": {
-            "text": "Dimensions {{ product.metafields.custom.dimensions.value }}",
+            "text": "<p>Dimensions {{ product.metafields.custom.dimensions.value }}<br\/>Designed by {{ product.metafields.custom.designer.value }}<br\/>Made in {{ product.metafields.custom.production_location.value }}<br\/><\/p>",
             "text_style": "body"
           }
         },
         "text_J3ikzh": {
           "type": "text",
           "settings": {
-            "text": "Designed by {{ product.metafields.custom.designer.value }}",
-            "text_style": "body"
-          }
-        },
-        "text_EtrGYN": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.production_location.value }}",
+            "text": "<p>Designed by {{ product.metafields.custom.designer.value }}<\/p>",
             "text_style": "body"
           }
         },
@@ -88,13 +81,6 @@
             "icon": "none",
             "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
             "page": ""
-          }
-        },
-        "text_yWzTje": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
           }
         }
       },
@@ -109,9 +95,7 @@
         "share",
         "text_BCFyD4",
         "text_J3ikzh",
-        "text_EtrGYN",
-        "collapsible-row-1",
-        "text_yWzTje"
+        "collapsible-row-1"
       ],
       "settings": {
         "enable_sticky_info": true,
