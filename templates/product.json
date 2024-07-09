@@ -58,7 +58,7 @@
           "settings": {
             "heading": "Care and maintenance",
             "icon": "none",
-            "content": "<p>{{ block.settings.page.title }}<\/p>",
+            "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
             "page": ""
           }
         },
@@ -82,6 +82,13 @@
             "text": "Designed by {{ product.metafields.custom.designer.value }}",
             "text_style": "body"
           }
+        },
+        "text_EtrGYN": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.production_location.value }}",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -95,7 +102,8 @@
         "collapsible-row-1",
         "share",
         "text_BCFyD4",
-        "text_J3ikzh"
+        "text_J3ikzh",
+        "text_EtrGYN"
       ],
       "settings": {
         "enable_sticky_info": true,
