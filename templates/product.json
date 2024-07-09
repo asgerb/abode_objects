@@ -67,13 +67,6 @@
             "text_style": "body"
           }
         },
-        "text_J3ikzh": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Designed by {{ product.metafields.custom.designer.value }}<\/p>",
-            "text_style": "body"
-          }
-        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
@@ -94,7 +87,6 @@
         "description",
         "share",
         "text_BCFyD4",
-        "text_J3ikzh",
         "collapsible-row-1"
       ],
       "settings": {
