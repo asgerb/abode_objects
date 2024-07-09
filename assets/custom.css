@@ -294,13 +294,3 @@ body main {
 .article-template__back {
   display: none;
 }
-
-.product-card-wrapper {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
-}
-
-.product-card-wrapper * {
-  font: inherit !important;
-  margin: 0 !important;
-}
