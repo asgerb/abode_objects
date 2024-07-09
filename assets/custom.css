@@ -465,3 +465,19 @@ body main {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
 }
+
+.text-sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.product_information__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product__title h1 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}

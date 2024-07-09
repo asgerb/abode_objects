@@ -458,8 +458,21 @@
                   render 'share-button', block: block, share_link: share_url
                 %}
               {%- when 'product_information' -%}
-                <div>
-                  <p>Fooooo</p>
+                <div class="product__product_information product_information text-sm">
+                  <ul class="product_information__list">
+                    {%- if product.metafields.custom.dimensions.value != blank -%}
+                      <li>Dimensions {{ product.metafields.custom.dimensions.value }}</li>
+                    {%- endif -%}
+                    {%- if product.metafields.custom.designer.value != blank -%}
+                      <li>Designed by {{ product.metafields.custom.designer.value }}</li>
+                    {%- endif -%}
+                    {%- if product.metafields.custom.production_location.value != blank -%}
+                      <li>Made in {{ product.metafields.custom.production_location.value }}</li>
+                    {%- endif -%}
+                    {%- if product.metafields.descriptors.care_guide.value != blank -%}
+                      <li>Care and maintenance {{ product.metafields.descriptors.care_guide.value }}</li>
+                    {%- endif -%}
+                  </ul>
                 </div>
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
