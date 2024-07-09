@@ -294,3 +294,42 @@ body main {
 .article-template__back {
   display: none;
 }
+
+.product-card-wrapper {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.product-card-wrapper * {
+  font: inherit !important;
+  margin: 0 !important;
+}
+
+.product-card-wrapper .card__inner,
+.product-card-wrapper .card__media {
+  aspect-ratio: 1/1 !important;
+  height: auto;
+}
+
+.product-card-wrapper .card__inner .card__content {
+  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.product-card-wrapper .card__media .media {
+  aspect-ratio: 1/1;
+}
+
+.product-card-wrapper .card__inner::before,
+.product-card-wrapper .card__inner::after {
+  display: none !important;
+}
+
+.product-card-wrapper .card__information {
+  padding: 0;
+}
+
+.product-card-wrapper .card {
+  gap: 0.5rem;
+}
