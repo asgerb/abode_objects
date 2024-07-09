@@ -1,17 +1,16 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 <div
-  class="page-width stockists-container"
+  class="page-width stockists-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
   style="--stockists-columns-desktop: {{ section.settings.columns_desktop }};--stockists-columns-mobile: {{ section.settings.columns_mobile }};"
 >
   {% for block in section.blocks %}
     <article class="stockist">
-      {% if block.settings.name != '' %}
+      {% if block.settings.name != blank %}
         <h2 class="stockist__name">
-          {% if block.settings.url != '' %}
-            <a href="{{ block.settings.url }}" target="_blank">
+          {% if block.settings.url != blank %}
+            <a href="{{ block.settings.url }}" target="_blank" class="stockist__link">
               {{ block.settings.name }}
-              {% render 'icon-arrow-ne' %}
             </a>
           {% else %}
             {{ block.settings.name }}
@@ -30,7 +29,7 @@
 {
   "name": "Stockists list",
   "tag": "div",
-  "class": "contacts-list container",
+  "class": "stockists-list container",
   "presets": [
     {
       "name": "Stockists list"
