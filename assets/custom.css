@@ -3,7 +3,7 @@
   --page-padding-top: 36px;
 
   --font-size-sm: 1.4rem;
-  --line-height-sm: 1.8rem;
+  --line-height-sm: 2rem;
   --font-size-base: 1.6rem;
   --line-height-base: 2.2rem;
   --font-size-lg: 2.8rem;
@@ -461,7 +461,7 @@ body main {
   }
 }
 
-.product__text--small {
+.product__text.product__text--sm {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
 }

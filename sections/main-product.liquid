@@ -87,12 +87,12 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                <p
+                <div
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% elsif block.settings.text_style == 'small' %} product__text--sm{% endif %}"
                   {{ block.shopify_attributes }}
                 >
                   {{- block.settings.text -}}
-                </p>
+                </div>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -457,7 +457,10 @@
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
                   render 'share-button', block: block, share_link: share_url
                 %}
-
+              {%- when 'product_information' -%}
+                <div>
+                  <p>Fooooo</p>
+                </div>
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
@@ -725,6 +728,10 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "product_information",
+      "name": "Product information"
     },
     {
       "type": "text",
