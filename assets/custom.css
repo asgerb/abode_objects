@@ -290,3 +290,7 @@ body main {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
 }
+
+.article-template__back {
+  display: none;
+}
