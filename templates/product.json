@@ -19,6 +19,7 @@
         },
         "caption": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>{{ product.metafields.descriptors.subtitle.value }}<\/p>",
             "text_style": "subtitle"
