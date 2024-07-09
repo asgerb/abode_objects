@@ -1,13 +1,14 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="stockists-container">
+<div class="page-width stockists-container">
   {% for block in section.blocks %}
     <article class="stockist">
       {% if block.settings.name != '' %}
-        <h2 class="name">
+        <h2 class="stockist__name">
           {% if block.settings.url != '' %}
             <a href="{{ block.settings.url }}" target="_blank">
               {{ block.settings.name }}
+              {% render 'icon-arrow-ne' %}
             </a>
           {% else %}
             {{ block.settings.name }}
@@ -15,7 +16,7 @@
         </h2>
       {% endif %}
 
-      <p class="country">
+      <p class="stockist__country">
         {{ block.settings.country }}
       </p>
     </article>
