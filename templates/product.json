@@ -68,6 +68,20 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "text_BCFyD4": {
+          "type": "text",
+          "settings": {
+            "text": "Dimensions {{ product.metafields.custom.dimensions.value }}",
+            "text_style": "body"
+          }
+        },
+        "text_J3ikzh": {
+          "type": "text",
+          "settings": {
+            "text": "Designed by {{ product.metafields.custom.designer.value }}",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -79,7 +93,9 @@
         "buy_buttons",
         "description",
         "collapsible-row-1",
-        "share"
+        "share",
+        "text_BCFyD4",
+        "text_J3ikzh"
       ],
       "settings": {
         "enable_sticky_info": true,
