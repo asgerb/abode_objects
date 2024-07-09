@@ -53,15 +53,6 @@
           "settings": {
           }
         },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care and maintenance",
-            "icon": "none",
-            "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -89,6 +80,22 @@
             "text": "{{ product.metafields.custom.production_location.value }}",
             "text_style": "body"
           }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care and maintenance",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "text_yWzTje": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -99,11 +106,12 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-1",
         "share",
         "text_BCFyD4",
         "text_J3ikzh",
-        "text_EtrGYN"
+        "text_EtrGYN",
+        "collapsible-row-1",
+        "text_yWzTje"
       ],
       "settings": {
         "enable_sticky_info": true,
