@@ -1,6 +1,9 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width stockists-container">
+<div
+  class="page-width stockists-container"
+  style="--stockists-columns-desktop: {{ section.settings.columns_desktop }};--stockists-columns-mobile: {{ section.settings.columns_mobile }};"
+>
   {% for block in section.blocks %}
     <article class="stockist">
       {% if block.settings.name != '' %}
@@ -31,6 +34,37 @@
   "presets": [
     {
       "name": "Stockists list"
+    }
+  ],
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "default": 5,
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column"
+        },
+        {
+          "value": "2",
+          "label": "2 columns"
+        },
+        {
+          "value": "3",
+          "label": "3 columns"
+        }
+      ],
+      "default": "2",
+      "label": "Number of columns on mobile"
     }
   ],
   "blocks": [
