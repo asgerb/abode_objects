@@ -23,8 +23,26 @@
 
 .header__inline-menu {
   grid-column: 1;
+  text-transform: uppercase;
+}
+
+.header__inline-menu .list-menu {
+  display: flex;
+  gap: 0.5em;
 }
 
 .header__search {
   display: none !important;
+}
+
+.footer {
+  border-top: 0 !important;
+}
+
+.footer__content-bottom {
+  border-top: 0 !important;
+}
+
+.header__menu-item {
+  padding: 0;
 }
